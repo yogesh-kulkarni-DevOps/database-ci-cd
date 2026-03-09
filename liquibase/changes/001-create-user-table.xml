@@ -1,0 +1,17 @@
+<databaseChangeLog>
+
+<changeSet id="1" author="yogesh">
+
+<createTable tableName="users">
+
+<column name="id" type="int">
+<constraints primaryKey="true"/>
+</column>
+
+<column name="name" type="varchar(100)"/>
+
+</createTable>
+
+</changeSet>
+
+</databaseChangeLog>
