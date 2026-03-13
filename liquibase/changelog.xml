@@ -34,6 +34,11 @@
 	<!-- ChangeSet 004 : Insert Initial Data -->		
 	<include 
 	        file="changes/004-insert-initial-data.xml"
-			relativeToChangelogFile="true"/>		
+			relativeToChangelogFile="true"/>	
+			
+	<!-- ChangeSet 005 : Insert Additional Data -->			
+	<include 
+	        file="changes/005-insert-additional-data.xml"
+			relativeToChangelogFile="true"/>
 
 </databaseChangeLog>

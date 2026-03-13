@@ -26,12 +26,7 @@
             <column name="email" value="charlie@company.com"/>
         </insert>
 
-        <insert tableName="employee">
-            <column name="id" valueNumeric="4"/>
-            <column name="name" value="Harshada"/>
-            <column name="email" value="harshada@couponzguru.com"/>
-        </insert>
-		
+       
     </changeSet>
 
 </databaseChangeLog>
