@@ -22,8 +22,8 @@
 
         <insert tableName="employee">
             <column name="id" valueNumeric="6"/>
-            <column name="name" value="Rahul Singh"/>
-            <column name="email" value="rahul.singh@example.com"/>
+            <column name="name" value="Rahul Sinha"/>
+            <column name="email" value="rahul.sinha@example.com"/>
         </insert>
 
     </changeSet>
