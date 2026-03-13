@@ -33,7 +33,7 @@
 			
 	<!-- ChangeSet 004 : Insert Initial Data -->		
 	<include 
-	        file="liquibase/changes/004-insert-initial-data.xml"
+	        file="changes/004-insert-initial-data.xml"
 			relativeToChangelogFile="true"/>		
 
 </databaseChangeLog>
