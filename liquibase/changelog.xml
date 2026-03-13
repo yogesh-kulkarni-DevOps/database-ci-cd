@@ -30,5 +30,10 @@
     <include
             file="changes/003-add-phone.xml"
             relativeToChangelogFile="true"/>
+			
+	<!-- ChangeSet 004 : Insert Initial Data -->		
+	<include 
+	        file="liquibase/changes/004-insert-initial-data.xml"
+			relativeToChangelogFile="true"/>		
 
 </databaseChangeLog>
