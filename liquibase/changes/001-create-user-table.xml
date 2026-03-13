@@ -1,17 +1,24 @@
-<databaseChangeLog>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<changeSet id="1" author="yogesh">
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+        http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 
-<createTable tableName="users">
+    <changeSet id="001" author="yogesh">
 
-<column name="id" type="int">
-<constraints primaryKey="true"/>
-</column>
+        <createTable tableName="users">
 
-<column name="name" type="varchar(100)"/>
+            <column name="id" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
 
-</createTable>
+            <column name="name" type="VARCHAR(100)"/>
 
-</changeSet>
+        </createTable>
+
+    </changeSet>
 
 </databaseChangeLog>

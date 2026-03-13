@@ -1,13 +1,20 @@
-<databaseChangeLog>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<changeSet id="2" author="yogesh">
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+        http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 
-<addColumn tableName="users">
+    <changeSet id="002-add-email-column" author="yogesh">
 
-<column name="email" type="varchar(100)"/>
+        <addColumn tableName="users">
 
-</addColumn>
+            <column name="email" type="VARCHAR(150)"/>
 
-</changeSet>
+        </addColumn>
+
+    </changeSet>
 
 </databaseChangeLog>
