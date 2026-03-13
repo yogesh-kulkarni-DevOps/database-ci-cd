@@ -1,0 +1,13 @@
+<databaseChangeLog>
+
+<changeSet id="3" author="yogesh">
+
+<addColumn tableName="users">
+
+<column name="phone" type="varchar(20)"/>
+
+</addColumn>
+
+</changeSet>
+
+</databaseChangeLog>
