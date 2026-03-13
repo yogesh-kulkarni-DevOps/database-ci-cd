@@ -3,21 +3,32 @@
 <databaseChangeLog
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
-        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
 
-    <changeSet id="1" author="yogesh">
+        xsi:schemaLocation="
+        http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-        <createTable tableName="employee">
+    <!--
+        Master Changelog File
+        Controls the order of execution for all database changes
+    -->
 
-            <column name="id" type="int">
-                <constraints primaryKey="true"/>
-            </column>
+    <!-- ChangeSet 001 : Create Users Table -->
+    <include
+            file="changes/001-create-user-table.xml"
+            relativeToChangelogFile="true"/>
 
-            <column name="name" type="varchar(100)"/>
+    <!-- ChangeSet 002 : Add Email Column -->
+    <include
+            file="changes/002-add-email-column.xml"
+            relativeToChangelogFile="true"/>
 
-        </createTable>
-
-    </changeSet>
+    <!-- ChangeSet 003 : Add Phone Column -->
+    <include
+            file="changes/003-add-phone.xml"
+            relativeToChangelogFile="true"/>
 
 </databaseChangeLog>
