@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="4" author="yogesh">
+
+        <insert tableName="employee">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="Alice"/>
+            <column name="email" value="alice@company.com"/>
+        </insert>
+
+        <insert tableName="employee">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="Bob"/>
+            <column name="email" value="bob@company.com"/>
+        </insert>
+
+        <insert tableName="employee">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="Charlie"/>
+            <column name="email" value="charlie@company.com"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>
