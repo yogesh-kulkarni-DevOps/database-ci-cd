@@ -10,8 +10,8 @@
 
         <insert tableName="employee">
             <column name="id" valueNumeric="1"/>
-            <column name="name" value="Alice"/>
-            <column name="email" value="alice@company.com"/>
+            <column name="name" value="Yogesh Kulkarni"/>
+            <column name="email" value="yogesh7318@.com"/>
         </insert>
 
         <insert tableName="employee">
