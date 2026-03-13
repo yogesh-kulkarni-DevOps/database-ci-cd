@@ -9,7 +9,7 @@
 
     <changeSet id="001" author="yogesh">
 
-        <createTable tableName="users">
+        <createTable tableName="employee">
 
             <column name="id" type="INT">
                 <constraints primaryKey="true"/>

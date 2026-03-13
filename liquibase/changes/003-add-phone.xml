@@ -9,7 +9,7 @@
 
     <changeSet id="003-add-phone-column" author="yogesh">
 
-        <addColumn tableName="users">
+        <addColumn tableName="employee">
 
             <column name="phone" type="VARCHAR(20)"/>
 
